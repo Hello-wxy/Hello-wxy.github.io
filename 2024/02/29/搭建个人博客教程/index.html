@@ -37,7 +37,7 @@
 <meta property="og:image" content="http://example.com/2024/02/29/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/image-20240306205149543.png">
 <meta property="og:image" content="http://example.com/2024/02/29/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/Study/MyBlog/source/_posts/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/image-20240306205149543.png">
 <meta property="article:published_time" content="2024-02-29T13:39:31.601Z">
-<meta property="article:modified_time" content="2024-03-06T13:11:11.376Z">
+<meta property="article:modified_time" content="2024-03-26T08:13:20.258Z">
 <meta property="article:author" content="王香芋">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -139,7 +139,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -150,7 +150,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -224,7 +224,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-03-06 21:11:11" itemprop="dateModified" datetime="2024-03-06T21:11:11+08:00">2024-03-06</time>
+      <time title="修改时间：2024-03-26 16:13:20" itemprop="dateModified" datetime="2024-03-26T16:13:20+08:00">2024-03-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -259,18 +259,18 @@
 <p>​		<strong>3.站点部署服务：</strong>就是将已成型的网站目录部署到互联网上，让网络上的其他主机能够正常访问，最简单的是github自带的github pages，但是这个方式在国内的访问速度极慢，在相关教程中使用netlify作为部署站点的服务提供商，而把github仅作为一个托管文件的场所，这样就能享受到netlify本身的国外加速服务了。此外，netlify除了直接部署静态网站的功能之外，还支持动态的构建网站，也就是我们可以自定义一个构建网站的脚本，比如说我们后面会使用的npm run clean和npm run built这个脚本，它会先清除之前已经构建好的静态网站，然后重新从头构建，以防某些地方更新不到位，之后我们每次向github commit的时候netlify都会自动pull并执行上述的脚本。</p>
 <p>​		<strong>4.访问加速服务：</strong>原理是CDN加速，Contnent Delivery Network，内容交付网络，其原理是通过多结点的缓存来提高网络内容的解析和访问速度，利用的是页面访问的局部性：刚刚访问过的页面很可能再过不久就会再次访问，其工作过程是，客户端先访问离自己最近的DNS（Domain Name System）服务器结点以获取目标内容所在的结点信息，然后根据该信息去询问CDN服务器结点，由CDN负责从网络中寻找远端的实际存储内容的服务器进行内容的获取，然后将获取的内容缓存下来，这样下次访问就会比较迅速了，从而实现了对网络内容交付的加速，这里需要DNS服务器和CDN服务器相互配合，因此他们一般是同一个服务器提供商的。</p>
 <p>​		在相关教程的推荐中，提供的解决方案是Hexo + Github + Netlify ( + Cloudflare)</p>
-<h1 id="1-博客生成框架和文件托管平台"><a href="#1-博客生成框架和文件托管平台" class="headerlink" title="1.博客生成框架和文件托管平台"></a>1.博客生成框架和文件托管平台</h1><p>CSDN教程：<a target="_blank" rel="noopener" href="http://t.csdnimg.cn/2aXyR">Hexo+Github博客搭建教程</a>，该教程图文详实，实操性强，跟着操作一遍基本不会有什么问题。</p>
+<h1 id="1-博客生成框架和文件托管平台"><a href="#1-博客生成框架和文件托管平台" class="headerlink" title="1.博客生成框架和文件托管平台"></a>1.博客生成框架和文件托管平台</h1><p>CSDN教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_58608526/article/details/124652412?spm=1001.2014.3001.5506">Hexo+Github博客搭建教程</a>，该教程图文详实，实操性强，跟着操作一遍基本不会有什么问题。</p>
 <p>·其中在使用npm install时会报错<br><img src="/2024/02/29/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/image-20240306203022189.png" alt="image-20240306203022189" style="zoom:67%;"></p>
 <img src="/2024/02/29/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/Study\MyBlog\source\_posts\搭建个人博客教程\image-20240306203022189.png" alt="image-20240306203022189" style="zoom:67%;">
 
 <p>解决方案：关闭npm严格ssl证书检查：$ npm set strict-ssl false</p>
-<h1 id="2-博客主题美化"><a href="#2-博客主题美化" class="headerlink" title="2.博客主题美化"></a>2.博客主题美化</h1><p>在nexo主题选择中作者选用了<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">NexT</a>主题。CSDN教程：<a target="_blank" rel="noopener" href="http://t.csdnimg.cn/PBuJb">Hexo中Next主题个性化美化的解决方案</a>以及<a target="_blank" rel="noopener" href="http://t.csdnimg.cn/g63lP">Next主题美化</a></p>
+<h1 id="2-博客主题美化"><a href="#2-博客主题美化" class="headerlink" title="2.博客主题美化"></a>2.博客主题美化</h1><p>在nexo主题选择中作者选用了<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">NexT</a>主题。CSDN教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/wyll19980812/article/details/107016680?spm=1001.2014.3001.5506">Hexo中Next主题个性化美化的解决方案</a>以及<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34003239/article/details/100883213?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171144069116800197055074%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=171144069116800197055074&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-7-100883213-null-null.nonecase&utm_term=next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96&spm=1018.2226.3001.4450">Next主题美化</a></p>
 <p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">更多hexo主题</a></p>
 <p>·在更改主题相关配置文件时，可以在本地查看更改后的效果<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNjI4MTM1NDI0OTQ4LnBuZw?x-oss-process=image/format,png" alt="img" style="zoom:80%;"></p>
-<h1 id="3-站点部署服务"><a href="#3-站点部署服务" class="headerlink" title="3.站点部署服务"></a>3.站点部署服务</h1><p>关于neltify站点部署服务教程：<a target="_blank" rel="noopener" href="http://t.csdnimg.cn/BbfkH">Hexo+Netlify快速搭建个人博客</a>，其中前半部分的内容我们已经实现，只需参考“发布网站”后的内容即可实现站点的部署。</p>
+<h1 id="3-站点部署服务"><a href="#3-站点部署服务" class="headerlink" title="3.站点部署服务"></a>3.站点部署服务</h1><p>关于neltify站点部署服务教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_33919950/article/details/88019707?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171144075616800186550843%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=171144075616800186550843&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-88019707-null-null.nonecase&utm_term=Hexo+Netlify%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&spm=1018.2226.3001.4450">Hexo+Netlify快速搭建个人博客</a>，其中前半部分的内容我们已经实现，只需参考“发布网站”后的内容即可实现站点的部署。</p>
 <p>有关如何搭建个人博客的教程推荐到此结束，祝搭建顺利！<br>内容参考：<a target="_blank" rel="noopener" href="https://b23.tv/0JHm8Hm">【超详细的个人博客搭建教程（无需服务器）- 从原理到实践手把手带你搭建属于自己的个人博客-哔哩哔哩】 </a></p>
 <h1 id="搭建后续："><a href="#搭建后续：" class="headerlink" title="搭建后续："></a>搭建后续：</h1><h2 id="1-图片显示问题："><a href="#1-图片显示问题：" class="headerlink" title="1.图片显示问题："></a>1.图片显示问题：</h2><p>在个人博客的使用中，发现有一些图片不能被正确的显示。</p>
-<p>CSDN教程：<a target="_blank" rel="noopener" href="http://t.csdnimg.cn/z7jt3">hexo博客中插入图片失败——解决思路及个人最终解决办法</a></p>
+<p>CSDN教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_43401436/article/details/107191688?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171144078616800213037070%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=171144078616800213037070&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~sobaiduend~default-1-107191688-null-null.nonecase&utm_term=hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%A4%B1%E8%B4%A5%E2%80%94%E2%80%94%E8%A7%A3%E5%86%B3%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%AA%E4%BA%BA%E6%9C%80%E7%BB%88%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&spm=1018.2226.3001.4450">hexo博客中插入图片失败——解决思路及个人最终解决办法</a></p>
 <p>该教程的确能够解决图片无法正常显示的问题，总结起来有几个步骤：</p>
 <p>1.创建图片资源文件夹：将*_config.yml*中的post_asset_folder 选项设置为true。为的是在相同路径下创建一个同名文件夹来存放图片资源。</p>
 <p>2.typora中的图片设置：在“文件”-“偏好设置”中，更改：</p>
@@ -372,7 +372,7 @@
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共9.9k字</span>
+  <span class="post-count">博客全站共15.4k字</span>
   
   
   
